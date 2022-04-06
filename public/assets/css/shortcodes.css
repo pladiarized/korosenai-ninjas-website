@@ -1805,10 +1805,13 @@ blockquote .author::before {
 
 .sc-heading.style-2 .content-right {
     text-align: right;
+    height: clamp(100px, 80vh, 350px);
 }
 
 .sc-heading.style-2 .content-left {
     display: flex;
+    margin-right: 30px;
+    margin-top: 30px;
 }
 
 .sc-heading.style-2 .content-left .group {
@@ -3028,7 +3031,7 @@ blockquote .author::before {
 }
 
 .category-inner .sc-heading.style-2 .content-right {
-    margin-top: -6px;
+    margin-top: 30px;
 }
 
 .pl-19 {

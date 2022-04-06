@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 const Category = props => {
   return (
@@ -15,7 +15,16 @@ const Category = props => {
                             </div>
                         </div>
                         <div className="content-right">
-                            <a href="https://twitter.com/korosenaininjas" target="_blank" rel="noreferrer" className="sc-button style letter style-2"><span>Our Twitter</span> </a>
+                                    <TwitterTimelineEmbed
+                                    autoHeight
+                                    noScrollbar
+                                    onLoad={function noRefCheck(){}}
+                                    screenName="korosenaininjas"
+                                    sourceType="profile"
+                                    theme="light"
+                                    transparent
+                                        />
+                            {/* <a href="https://twitter.com/korosenaininjas" target="_blank" rel="noreferrer" className="sc-button style letter style-2"><span>Our Twitter</span> </a> */}
                         </div>
                     </div>
                 </div>
