@@ -8,6 +8,8 @@ import dataCreate from '../assets/fake-data/dataCreate'
 import Category from '../components/layouts/home/Category';
 import Create from '../components/Create';
 import FooterStyle2 from '../components/footer/FooterStyle2';
+import NFT from '../components/layouts/home/NFT';
+import dataNFT from '../assets/fake-data/dataNFT';
 
 const Home01 = () => {
   return <div className='home-1'>
@@ -16,6 +18,7 @@ const Home01 = () => {
       <section id='Lore' className='tf-section'>
       <Category />
       </section>
+      <NFT data={dataNFT}/>
       <Create id='Roadmap' data={dataCreate} />
       <BestSeller id='Team' data={dataBestSeller} />
       <FooterStyle2 />

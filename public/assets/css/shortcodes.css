@@ -660,7 +660,7 @@ blockquote .author::before {
 .sc-author .card-avatar img {
     border-radius: 50%;
     overflow     : hidden;
-    max-width: 60%;
+    max-width: 85%;
 }
 
 .sc-author .infor {
@@ -697,7 +697,7 @@ blockquote .author::before {
     height       : 100px;
     object-fit   : cover;
     overflow     : hidden;
-    margin-right : 30px;
+    /*! margin-right : 30px; */
     margin-bottom: 0;
     flex-shrink  : 0;
 }
@@ -1804,9 +1804,17 @@ blockquote .author::before {
 }
 
 .sc-heading.style-2 .content-right {
+        height: clamp(100px, 80vh, 450px);
     text-align: right;
-    height: clamp(100px, 80vh, 450px);
 }
+.top-seller > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+    height: auto;
+   }
+.top-seller > div:nth-child(1) > div:nth-child(1) {
+    row-gap: 30px;
+   }
+   
+   
 
 .sc-heading.style-2 .content-left {
     display: flex;
